@@ -3,11 +3,7 @@
 .button {
   display: flex;
   cursor: pointer;
-
-  a {
-    text-decoration: none;
-  }
-  
+ 
   &-text {
     font-family: $font-display;
     font-weight: $weight-extra-bold;
