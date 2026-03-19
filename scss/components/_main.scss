@@ -1,0 +1,159 @@
+@use '../abstracts/variables' as *;
+
+// ============================================
+// MOBILE FIRST - estilos base para móvil
+// ============================================
+
+.main-home {
+  padding: $spacing-lg $spacing-sm; 
+  max-width: 1275px;
+  margin: 0 auto;
+  
+  // Grid 1
+  &__grid1 {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 0;
+    margin-bottom: $spacing-sm;
+
+    &-col1 {
+      order: 2;
+      padding: $spacing-md 0 $spacing-md;
+      max-width: 100%;
+    }
+
+    &-col2 {
+      order: 1;  // Imagen primero
+      width: 100%;
+      height: 320px; 
+      background-image: url('../assets/your-day-at-the-gallery.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &-title {
+      font-family: $font-display;
+      font-weight: $weight-black;
+      font-size: 50px;
+      line-height: 45px;
+      color: $color-dark;
+      text-transform: uppercase;
+      margin-bottom: $spacing-sm;
+    }
+
+    &-description {
+      font-family: $font-outfit;
+      font-weight: $weight-regular;
+      font-size: 18px;
+      line-height: 28px;
+      color: $color-gray;
+    }
+  }
+
+  // Grid 2
+  &__grid2 {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: $spacing-sm;
+
+    &-left {     
+      aspect-ratio: 3/4;
+      background-image: url('../assets/come-and-be-inspired-left.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-sm;
+
+      &-top {
+        aspect-ratio: 16 / 9;
+        background-image: url('../assets/come-and-be-inspired-right.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      &-bottom {
+        background-color: $color-dark;
+        padding: $spacing-md $spacing-sm; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    &-title {
+      font-family: $font-display;
+      font-weight: $weight-black;
+      font-size: 50px; 
+      line-height: 45px;
+      color: $color-white;
+      text-transform: uppercase;
+      margin-bottom: $spacing-sm;
+    }
+
+    &-description {
+      font-family: $font-outfit;
+      font-weight: $weight-regular;
+      font-size: 18px;
+      line-height: 28px;
+      color: $color-white;
+    }
+  }
+}
+
+// Location page
+.main-location {
+  background-color: $color-dark;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    padding: $spacing-md $spacing-sm;
+    max-width: $breakpoint-large;
+    margin: 0 auto;
+  
+    &-col1 {
+      max-width: 100%;
+    }
+
+    &-col2 {
+      width: 100%;
+    }
+
+    &-title {
+      font-family: $font-display;
+      font-weight: $weight-black;
+      font-size: 50px; 
+      line-height: 50px;
+      color: $color-white;
+      text-transform: uppercase;
+      margin-bottom: $spacing-md;
+      width: auto;  
+    }
+
+    &-col2-title {
+      font-family: $font-display;
+      font-weight: $weight-black;
+      font-size: 32px; 
+      line-height: 32px;
+      color: $color-accent;
+      text-transform: uppercase;
+      margin-bottom: $spacing-sm;
+    }
+
+    &-description {
+      font-family: $font-outfit;
+      font-weight: $weight-regular;
+      font-size: 18px; 
+      line-height: 28px;
+      color: $color-white;
+    }
+
+    &-address {
+      font-style: normal;
+    }
+  }
+}

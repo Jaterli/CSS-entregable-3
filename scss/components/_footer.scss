@@ -1,0 +1,76 @@
+@use '../abstracts/variables' as *;
+
+// ============================================
+// MOBILE FIRST - estilos base para móvil
+// ============================================
+
+.footer {
+  &-home {
+    background-color: $color-dark;
+    color: $color-white;
+
+    .footer__social-link svg {
+      fill: $color-white;
+      &:hover {
+        fill: $color-accent;
+      }
+    }
+  }
+
+  &-location {
+    background-color: $color-accent;
+    color: $color-dark;
+
+    .footer__social-link svg {
+      fill: $color-dark;
+      &:hover {
+        fill: $color-white;
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-md;
+    padding: $spacing-md $spacing-md;
+    max-width: $breakpoint-large;
+    margin: 0 auto;
+  }
+
+  &__brand-text {
+    font-family: $font-display;
+    font-weight: $weight-black;
+    font-size: 28px; 
+    line-height: 1;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  &__info-text {
+    font-family: $font-outfit;
+    font-weight: $weight-regular;
+    font-size: 16px; 
+    line-height: 26px;
+  }
+
+  &__social {
+    display: flex;
+    gap: $spacing-sm;
+    align-items: center;
+    justify-content: left; 
+  }
+
+  &__social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    svg {
+      width: 20px;
+      height: 20px;
+      transition: fill 0.3s ease;
+    }
+  }
+}
+

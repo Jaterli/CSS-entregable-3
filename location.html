@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Art Gallery</title>
+  <!-- Preconectar con Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fuentes Big Shoulders Display (900,800) y Outfit (400, Light) -->
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@400&display=swap" rel="stylesheet">
+  <!-- Hoja de estilos SCSS compilada (enlazamos como CSS) -->
+  <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+
+<header class="header header-map"> 
+    <div class="header-map__content">
+        <a href="index.html">
+            <div class="button">
+                <div class="button-arrow">
+                <!-- flecha svg blanca -->
+                <svg width="10" height="24" viewBox="0 0 10 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0L1 12L9 24" stroke="white" stroke-width="2"/>
+                </svg>
+                </div>
+                <span class="button-text">BACK TO HOME</span>
+            </div>
+         </a>
+    </div>
+</header>
+
+<main class="main main-location">
+    <section class="main-location__grid">
+        <div class="main-location__grid-col1">
+            <h2 class="main-location__grid-title">OUR LOCATION</h2>
+        </div>
+        <div class="main-location__grid-col2">
+            <h3 class="main-location__grid-col2-title">99 King Street</h3>  
+            <div class="main-location__grid-description">                           
+                <address class="main-location__grid-address">
+                    Newport<br />
+                    RI 02840<br />
+                    United States of America<br /><br />
+                </address>
+                <p>
+                    Our newly opened gallery is located near the Edward
+                    King House on 99 King Street, the Modern Art Gallery is
+                    free to all visitors and open seven days a week from
+                    8am to 9pm.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer footer-location">
+  <div class="footer__content">    
+    <p class="footer__brand-text">MODERN <br />ART GALLERY</p>
+    <p class="footer__info-text">The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+    <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Facebook">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 10.0611C20 4.50451 15.5229 0 10 0C4.47715 0 0 4.50451 0 10.0611C0 15.0824 3.65685 19.2452 8.4375 20V12.9695H5.89844V10.0611H8.4375V7.84446C8.4375 5.32283 9.93047 3.93013 12.2146 3.93013C13.3087 3.93013 14.4531 4.12646 14.4531 4.12646V6.60216H13.1922C11.9499 6.60216 11.5625 7.37826 11.5625 8.17453V10.0611H14.3359L13.8926 12.9695H11.5625V20C16.3431 19.2452 20 15.0824 20 10.0611Z" />
+        </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 1.80188C12.6719 1.80188 12.9875 1.81375 13.9406 1.85625C14.825 1.895 15.3031 2.045 15.6188 2.17125C16.0344 2.335 16.3344 2.53375 16.6438 2.84313C16.9562 3.15625 17.1512 3.4525 17.3156 3.86813C17.4419 4.18375 17.5919 4.665 17.6306 5.54563C17.6731 6.5025 17.685 6.81813 17.685 9.48625C17.685 12.1581 17.6731 12.4737 17.6306 13.4269C17.5919 14.3112 17.4419 14.7894 17.3156 15.105C17.1512 15.5206 16.9525 15.8206 16.6438 16.13C16.3306 16.4425 16.0344 16.6375 15.6188 16.8019C15.3031 16.9281 14.8219 17.0781 13.9406 17.1169C12.9838 17.1594 12.6681 17.1712 10 17.1712C7.32812 17.1712 7.0125 17.1594 6.05938 17.1169C5.175 17.0781 4.69687 16.9281 4.38125 16.8019C3.96563 16.6375 3.66562 16.4388 3.35625 16.13C3.04375 15.8169 2.84875 15.5206 2.68438 15.105C2.55812 14.7894 2.40812 14.3081 2.36938 13.4269C2.32688 12.47 2.315 12.1544 2.315 9.48625C2.315 6.81438 2.32688 6.49875 2.36938 5.54563C2.40812 4.66125 2.55812 4.18313 2.68438 3.8675C2.84875 3.45188 3.0475 3.15188 3.35625 2.8425C3.66938 2.53 3.96563 2.335 4.38125 2.17063C4.69687 2.04438 5.17812 1.89438 6.05938 1.85563C7.0125 1.81313 7.32812 1.80125 10 1.80125V1.80188ZM10 0C7.28438 0 6.94375 0.011875 5.97813 0.055C5.01562 0.098125 4.34687 0.255 3.77187 0.473125C3.17187 0.7 2.67187 0.995 2.175 1.495C1.675 1.99188 1.38062 2.49188 1.15375 3.09125C0.935625 3.66625 0.77875 4.335 0.735625 5.2975C0.6925 6.2625 0.680664 6.60375 0.680664 9.31937C0.680664 12.035 0.6925 12.3756 0.735625 13.3412C0.77875 14.3037 0.935625 14.9725 1.15375 15.5475C1.38062 16.1475 1.67812 16.6512 2.175 17.1444C2.67187 17.6406 3.17187 17.9381 3.77125 18.165C4.34687 18.3831 5.015 18.54 5.9775 18.5831C6.9425 18.6262 7.28375 18.6381 9.99937 18.6381C12.715 18.6381 13.0556 18.6262 14.0212 18.5831C14.9838 18.54 15.6525 18.3831 16.2275 18.165C16.8269 17.9381 17.3269 17.6406 17.8238 17.1444C18.32 16.6475 18.6144 16.1475 18.8444 15.5481C19.0625 14.9731 19.2194 14.305 19.2625 13.3425C19.3056 12.3775 19.3175 12.0362 19.3175 9.32062C19.3175 6.605 19.3056 6.26437 19.2625 5.29875C19.2194 4.33625 19.0625 3.6675 18.8444 3.0925C18.6219 2.4875 18.3306 1.98375 17.8306 1.49125C17.3306 0.99875 16.8306 0.70125 16.2319 0.47125C15.6569 0.253125 14.9888 0.09625 14.0262 0.053125C13.0569 0.01125 12.7156 0 10 0Z" />
+            <path d="M10 4.86499C7.41625 4.86499 5.3225 6.95874 5.3225 9.54249C5.3225 12.1262 7.41625 14.22 10 14.22C12.5838 14.22 14.6775 12.1262 14.6775 9.54249C14.6775 6.95874 12.5838 4.86499 10 4.86499ZM10 12.4306C8.40625 12.4306 7.11187 11.1362 7.11187 9.54249C7.11187 7.94874 8.40625 6.65437 10 6.65437C11.5938 6.65437 12.8881 7.94874 12.8881 9.54249C12.8881 11.1362 11.5938 12.4306 10 12.4306Z" />
+            <path d="M15.3438 4.92624C15.3438 5.54561 14.8406 6.04561 14.2212 6.04561C13.6019 6.04561 13.0988 5.54249 13.0988 4.92624C13.0988 4.30999 13.6019 3.80374 14.2212 3.80374C14.8406 3.80374 15.3438 4.30686 15.3438 4.92624Z" />
+        </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="X (Twitter)">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.6517 8.912L18.3377 1H16.7767L10.9477 7.789L6.24266 1H0.820312L7.84266 11.212L0.820312 19.5H2.38131L8.54631 12.33L13.5127 19.5H18.935L11.6517 8.912ZM9.37166 11.378L8.65266 10.346L2.92466 2.419H5.47266L10.0137 9.133L10.7327 10.165L16.7777 18.14H14.2297L9.37166 11.378Z" />
+        </svg>
+        </a>
+    </div>
+  </div>    
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as *;
+
+.button {
+  display: flex;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+  }
+  
+  &-text {
+    font-family: $font-display;
+    font-weight: $weight-extra-bold;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 3.64px;
+    background-color: $color-dark;
+    color: $color-white;
+    padding: 0 2rem;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+  }
+
+  &-arrow {
+    width: 56px;
+    height: 72px;
+    background-color: $color-accent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+    
+    svg {
+      width: 10px;
+      height: 24px;
+      
+      path {
+        stroke: $color-white;
+        stroke-width: 2;
+      }
+    }
+  }
+
+  &:hover {
+    .button-text {
+      background-color: $color-accent;
+    }
+    .button-arrow {
+      background-color: $color-dark;
+    }
+  }
+}

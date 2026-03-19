@@ -1,0 +1,272 @@
+@use '../abstracts/variables' as *;
+
+// ============================================
+// TABLET (768px en adelante)
+// ============================================
+@media (min-width: $breakpoint-tablet) {
+  
+  // Hero
+  .hero {
+    padding-right: $spacing-md;    
+    min-height: 800px;
+    max-width: 50%;
+    margin-top: 0;    
+    margin-right: 0;
+    margin-bottom: $spacing-md;    
+    align-content: space-around;    
+    
+    &__layers {
+      position: absolute;     
+      left: 0;
+      top: 0;    
+      display: flex;
+      width: 100%;
+      z-index: 1;            
+    }
+
+    &__layer2 { 
+      width: 437px;
+      height: 800px;
+    }
+
+    &__content {
+      gap: $spacing-lg;
+      padding: 0;
+    }
+
+    &__title {
+      font-size: 70px;
+      line-height: 65px;
+      margin-left: 0;
+    }
+
+    &__right-block {
+      margin-left: 0;
+    }
+
+    &__description {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: $spacing-lg;
+    }
+  }
+
+  // Header mapa
+  .header-map {
+    &__content {
+      padding-left: $spacing-md;
+    }
+  }
+
+  // Main home
+  .main-home {
+    padding: $spacing-lg $spacing-md;
+
+    &__grid1 {
+      grid-template-columns: 0.8fr 1.2fr; 
+      gap: $spacing-xl;
+      
+      &-col1 {
+        order: 0; 
+        max-width: 350px;
+        padding: $spacing-md 0;
+      }
+      
+      &-title {
+        font-size: 50px;
+        line-height: 45px;
+        width: calc(100% - 50px);
+      }
+    }
+
+    &__grid2 {
+      grid-template-columns: 1.2fr 0.8fr;
+      
+      &-left {       
+        aspect-ratio: unset;
+      }
+      
+      &-right {
+        &-bottom {
+          height: auto;
+          padding: $spacing-lg $spacing-md;
+        }
+      }
+      
+      &-title {
+        font-size: 50px;
+        line-height: 45px;
+      }
+      
+      &-description {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  // Main location
+  .main-location {
+    &__grid {
+      padding: $spacing-lg $spacing-md;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: $spacing-lg;
+      
+      &-title {
+        width: min-content;
+        font-size: 55px;
+        line-height: 50px;
+      }
+      
+      &-col2 {
+        &-title {
+          font-size: 32px;
+          line-height: 32px;
+        }
+      }
+      
+      &-description {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  // Footer
+  .footer {
+    &__content {
+      grid-template-columns: 0.5fr 1.1fr 0.4fr; 
+      gap: $spacing-lg;
+      padding: $spacing-lg $spacing-md;
+    }
+    
+    &__brand-text {
+      font-size: 30px;
+    }
+    
+    &__info-text {
+      font-size: 18px;
+      line-height: 32px;
+    }
+    
+    &__social {
+      justify-content: right; 
+    }
+  }
+}
+
+// ============================================
+// DESKTOP (1024px en adelante)
+// ============================================
+@media (min-width: $breakpoint-desktop) {
+  
+  // Hero
+  .hero {
+    padding: $spacing-3xl $spacing-xl;
+    max-width: 1275px;
+    margin-right: auto;
+    margin-left: auto;
+    align-content: unset;
+
+    &__layer1 {
+      display: block;
+      width: 27%;
+      background-color: $color-dark;
+    }
+
+    &__layer2 {
+      width: 437px;
+      background-size: cover;
+    }
+
+    &__content {
+      flex-direction: row; 
+      justify-content: space-between;
+    }
+
+    &__title {
+      color: $color-white;
+      font-size: 70px;
+      line-height: 65px;
+    }
+
+    &__right-block {
+      max-width: 450px;
+    }
+
+    &__description {
+      font-size: 22px;
+      line-height: 32px;
+      max-width: 350px;
+      margin-left: auto;
+      margin-bottom: $spacing-lg;
+    }
+  }
+
+  .header-map {
+    &__content {
+      padding-left: $spacing-xl;
+    }
+  }
+
+  // Main home
+  .main-home {
+    padding: $spacing-xl $spacing-xl;
+
+    &__grid1 {
+      &-title {
+        font-size: 60px;
+        line-height: 60px;
+      }
+      
+      &-description {
+        font-size: 22px;
+        line-height: 32px;
+      }
+    }
+
+    &__grid2 {
+      &-title {
+        font-size: 60px;
+        line-height: 60px;
+      }
+      
+      &-description {
+        font-size: 22px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  // Main location
+  .main-location {
+    &__grid {
+      padding: $spacing-xl $spacing-xl;
+      
+      &-title {
+        font-size: 70px;
+        line-height: 70px;
+      }
+
+      &-col2 {
+        &-title {
+          font-size: 36px;
+          line-height: 36px;
+        }
+      }
+
+      &-description {      
+        font-size: 22px;
+        line-height: 32px;
+      }        
+    }
+  }
+
+  // Footer
+  .footer {
+    &__content {
+      padding: $spacing-lg $spacing-xl;
+    }
+  }
+}
+
